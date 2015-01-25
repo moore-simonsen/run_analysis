@@ -20,31 +20,31 @@ By use of the following 6 files:
   - X_train.txt
   - y_train.txt
   
-Functions used to merge the data:
+  Functions used to merge the data:
   - cbind() - for test and training sets respectively
   - rbind() - to merge test and traininsets
   
 2. Extracting only the measurements on the mean and standard deviation for each measurement. 
 The mean and std variables were selected with:
-- subset()
+  - subset()
 
 3. Use descriptive activity names to name the activities in the data set
 The activities were named through a direct subset of the data frame, adding names from the following file:
-- activity_labels.txt
+  - activity_labels.txt
 
 4. Appropriately labelling of the data set with descriptive variable names.
 The data was renamed with names similar to the original ones from the "features.txt" with a small moderation (see the CodeBook.Rmd)
 The following package and function were used:
-- reshape package
-- rename()
+  - reshape package
+  - rename()
 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 The subsetted data was reordered and converted to a data table before the final reordering using the lapply function.
 The following packages were used:
-- data.table
-- dplyr
+  - data.table
+  - dplyr
 
 The dataset includes the following files:
-- README.Rmd: Desciption of how the run_analysis.R was created in steps, used packages and functions. Which files were used. 
-- CodeBook.Rmd: A description of the variablenames and how they have been changed from the original.
-- run_analysis.R: The R script that does as explained in the README.Rmd
+  - README.Rmd: Desciption of how the run_analysis.R was created in steps, used packages and functions. Which files were used. 
+  - CodeBook.Rmd: A description of the variablenames and how they have been changed from the original.
+  - run_analysis.R: The R script that does as explained in the README.Rmd
