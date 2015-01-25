@@ -1,0 +1,91 @@
+---
+title: "CodeBook"
+author: "mooresimonsen"
+date: "19. jan. 2015"
+output: html_document
+---
+Description of all the used variables subsetted from the files mentionen in the README.Rmd
+
+VARIABLE NAMES - DATA DICTIONARY
+
+Subjectnames
+
+- This variable includes an overall of 30 participants
+  
+Activitytypes 
+
+- This variable desriptively describes the types of performed activity by the participants;
+    "LAYING",
+    "SITTING",
+    "STANDING",
+    "WALKING",
+    "WALKING_DOWNSTAIRS".
+
+
+
+The following variblenames are featureselections that come from the use of accelerometer and gyroscope during physical activity:
+
+
+tBodyAcc-XYZ,
+
+tGravityAcc-XYZ,
+
+tBodyAccJerk-XYZ,
+
+tBodyGyro-XYZ,
+
+tBodyGyroJerk-XYZ,
+
+tBodyAccMag,
+
+tGravityAccMag,
+
+tBodyAccJerkMag,
+
+tBodyGyroMag,
+
+tBodyGyroJerkMag,
+
+fBodyAcc-XYZ,
+
+fBodyAccJerk-XYZ,
+
+fBodyGyro-XYZ,
+
+fBodyAccMag,
+
+fBodyBodyAccJerkMag,
+
+fBodyBodyGyroMag,
+
+fBodyBodyGyroJerkMag.
+
+
+
+Explanation to variablenames from featureselection:
+
+  - Acc - short for accelerometer
+  
+  - Gyro - short for gyroscope
+  
+  - X/Y/Z - 3-axial signals, types of raw signals from X/Y/Z directions
+  
+  - t - the prefix denotes time
+  
+  - f - the prefix indicates frequency domain signals
+  
+  - Jerk - refers to jerk signals
+  
+  - Mag - refers to calculation using the Euclidean norm
+  
+  - Body/gravity - how the Acc signal was seperated
+
+The chosen features are all either labelled with mean or std:
+  - Mean - an estimation of the mean value
+  - std - an estimation of the standard deviation
+
+
+Note1: the bodybody repeat should just have been body, they do not mean anything out of the ordinary. 
+
+Note2: the original spelling of the variables included (-) which has been changed since this is confused for a minus in R.
+
